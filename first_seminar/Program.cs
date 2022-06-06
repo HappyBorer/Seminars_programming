@@ -1,35 +1,7 @@
-﻿byte day = Convert.ToByte(Console.ReadLine());
-switch(day)
+﻿int number = Convert.ToInt32(Console.ReadLine());
+int count = number * -1;
+while(count <= number)
 {
-    case 1:
-        Console.WriteLine("Понедельник");
-    break;
-    case 2:
-        Console.WriteLine("Вторник");
-    break;
-    
-    case 3:
-        Console.WriteLine("Среда");
-    break;
-
-    case 4:
-        Console.WriteLine("Четверг");
-    break;
-
-    case 5:
-        Console.WriteLine("Пятница");
-    break;
-
-    case 6:
-        Console.WriteLine("Суббота");
-    break;
-
-    case 7:
-        Console.WriteLine("Воскресенье");
-    break;
-
-    default:
-        Console.WriteLine("Вы ввели не день недели");
-    break;
+    Console.Write(count + ", ");
+    count++;
 }
-
