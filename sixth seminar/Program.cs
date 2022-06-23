@@ -84,41 +84,30 @@ int Input(string output)
 Если N = 5 -> 0 1 1 2 3
 Если N = 3 -> 0 1 1
 Если N = 7 -> 0 1 1 2 3 5 8*/
-// int N = Input("Введите число: ");
-// int[] numbers = new int[N];
+int N = Input("Введите число: ");
+int[] numbers = new int[N];
 
 
-// if (N > 2)
-// {
-//     numbers[0] = 0;
-//     numbers[1] = 1;
-//     for (int i = 2; i < numbers.Length; i++)
-//     {
-//         numbers[i] = numbers[i - 1] + numbers[i - 2];
-//     }
-//     Write($"Если N = 5 -> ");
-//     PrintArray(numbers);
-// }
-// else if (N == 1)
-// {
-//     Write(numbers[0]);
-// }
-// else if (N == 2){ 
-//     Write(0 + " " + 1);
-// }
-// else Write("Ошибка");
+if (N > 0) numbers[0] = 0;
+if (N > 1) numbers[1] = 1;
 
+for (int i = 2; i < numbers.Length; i++)
+{
+    numbers[i] = numbers[i - 1] + numbers[i - 2];
+}
+Write($"Если N = 5 -> ");
+PrintArray(numbers);
 
 /*Задача 45: Напишите программу, которая будет создавать 
 копию заданного массива с помощью поэлементного копирования.*/
 
 
-int[] numbers = {1, 4, 5, 6};
-int[] numbers2 = new int[numbers.Length];
+// int[] numbers = {1, 4, 5, 6};
+// int[] numbers2 = new int[numbers.Length];
 
-for(int i = 0; i < numbers.Length; i++)
-{
-    numbers2[i] = numbers[i];
-}
-PrintArray(numbers2);
+// for(int i = 0; i < numbers.Length; i++)
+// {
+//     numbers2[i] = numbers[i];
+// }
+// PrintArray(numbers2);
 
