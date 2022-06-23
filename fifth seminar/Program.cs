@@ -105,10 +105,7 @@ int[] arraySecond = new int[sizz];
 
 for (int i = 0; i < sizz; i++)
 {
-    if (array[i] == array[sizz])
-    {
-        return;
-    }
+    
     result = array[i] * array[array.Length - i - 1];
 
     arraySecond[i] = result;
