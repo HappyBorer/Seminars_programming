@@ -5,7 +5,7 @@ Clear();
 //double a = Convert.ToDouble(new Random(100, 100) / 10);
 
 
-
+// switch expression
 // Console.Write("Введите число от 0 до 15: ");
 // int a = Convert.ToInt32(Console.ReadLine());
 
